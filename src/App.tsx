@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import PrincipalName from "./components/PrincipalName.tsx";
 import ItemsKnowloge from "./components/ItemsKnowlege.tsx";
-import FacebookButton from "./components/FacebookButton.tsx";
 import Icon from "./components/LinkeDinButton.tsx";
 import {
   Facebook,
@@ -15,13 +14,16 @@ import {
   Dumbbell,
   Building2,
 } from "lucide-react";
+import "@radix-ui/themes/styles.css";
+// import Modal from "./components/ThemeComponent.tsx";
+import DialogDemo from "./components/Modal/ModalTest.tsx";
 function App() {
   return (
     //with this className below, was created columns
     <div className="grid grid-cols-[0.5fr_6fr_0.5fr] items-center justify-center text-center h-screen">
       {/*  */}
-      {/*  */}
-      <div className="mt-20 ml-5">
+      {/* ICOMS IN THE LEAFT  */}
+      <div className="mt-20 ml-5 ">
         <div className="grid rounded-full h-20 w-20 border-2 border-blue-500 items-center justify-center mb-5">
           <Icon icon={Facebook} color="white" size={35} />
         </div>
@@ -34,15 +36,29 @@ function App() {
           <Icon icon={Linkedin} color="white" size={35} />
         </div>
       </div>
+      {/* ICOMS IN THE LEAFT  */}
       {/*  */}
-      {/*  */}
+      {/* ITEMS IN THE MIDDLE  */}
       <div className="mt-40">
         <ItemsKnowloge />
         <PrincipalName />
+        {/* MODAL ITEMS */}
+        <div className="grid grid-cols-[2fr_2fr_2fr] items-center justify-center text-center h-screen ml-40">
+          <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center ">
+            <Icon icon={Dumbbell} color="white" size={30} />
+          </div>
+          <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center">
+            <Icon icon={Dumbbell} color="white" size={30} />
+          </div>
+          <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center">
+            <Icon icon={Dumbbell} color="white" size={30} />
+          </div>
+        </div>
+        {/* MODAL ITEMS */}
       </div>
-      {/*  */}
-      {/*  */}
-      <div className="mt-8 ml-5 ">
+      {/* ITEMS IN THE MIDDLE */}
+      {/* ICONS IN THE RIGHT */}
+      <div className="mt-8 ml-5  ">
         <div className="grid rounded-full h-20 w-20 border-2 border-red-500 items-center justify-center">
           <Icon icon={Stethoscope} color="white" size={28} />
         </div>
@@ -74,7 +90,7 @@ function App() {
         <h4 className="text-white font-k2d text-1xl mr-10 mb-2">Business</h4>
         {/*  */}
       </div>
-      {/*  */}
+      {/* ICONS IN THE RIGHT */}
       {/*  */}
     </div>
   );
