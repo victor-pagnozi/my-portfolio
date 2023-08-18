@@ -5,6 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  .align-items {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply cursor-pointer;
+  }
+
   .circle-icons {
     @apply grid;
     @apply rounded-full;
@@ -13,14 +21,11 @@
     @apply border-2;
     @apply items-center;
     @apply justify-center;
-    @apply cursor-pointer;
   }
 
   .text-icon {
     @apply text-white;
     @apply font-k2d;
     @apply text-xl;
-    @apply mr-10;
-    @apply mb-2;
   }
 }
