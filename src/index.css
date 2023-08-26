@@ -3,3 +3,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .align-items {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply cursor-pointer;
+  }
+
+  .circle-icons {
+    @apply grid;
+    @apply rounded-full;
+    @apply h-20;
+    @apply w-20;
+    @apply border-2;
+    @apply items-center;
+    @apply justify-center;
+  }
+
+  .text-icon {
+    @apply text-white;
+    @apply font-k2d;
+    @apply text-xl;
+  }
+}
