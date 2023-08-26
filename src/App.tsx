@@ -15,6 +15,7 @@ function App() {
       <MiddleSide />
 
       <RightSideBar />
+      
     </div>
   );
 }
