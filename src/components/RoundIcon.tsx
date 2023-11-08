@@ -8,7 +8,7 @@ interface RoundIconProps {
 export function RoundIcon(props: RoundIconProps) {
   return (
     <div
-      className="grid rounded-full h-20 w-20
+      className="grid rounded-full h-20 w-20 cursor-pointer
       border-2 items-center justify-center mb-5"
       style={{ borderColor: props.circleColor }}
     >
