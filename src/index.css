@@ -29,3 +29,7 @@
     @apply text-xl;
   }
 }
+
+body {
+  background-color: #242323;
+}

@@ -1,23 +1,21 @@
-import { Dumbbell } from "lucide-react";
-import PrincipalName from "./PrincipalName";
-import ItemKnowledge from "./ItemsKnowledge";
+import { PrincipalName } from "./PrincipalName";
+import { ItemKnowledge } from "./ItemsKnowledge";
+import { ProjectPreviewItem } from "./ProjectPreviewItem";
 
 export function MiddleSide() {
   return (
-    <div className="mt-40">
-      <ItemKnowledge />
+    <div className="pt-10 h-full">
       <PrincipalName />
+      <ItemKnowledge />
 
-      <div className="grid grid-cols-[2fr_2fr_2fr] items-center justify-center text-center h-screen ml-40">
-        <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center">
-          <Dumbbell size={30} />
-        </div>
-        <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center">
-          <Dumbbell size={30} />
-        </div>
-        <div className="grid rounded-lg h-80 w-60 bg-red-300 items-center justify-center">
-          <Dumbbell size={30} />
-        </div>
+      <div
+        className="grid grid-cols-[2fr_2fr_2fr] mt-28
+          items-center justify-center text-center h-2/3 ml-40 gap-12"
+      >
+        <ProjectPreviewItem />
+        <ProjectPreviewItem />
+        <ProjectPreviewItem />
+        <ProjectPreviewItem />
       </div>
     </div>
   );

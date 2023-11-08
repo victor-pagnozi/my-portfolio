@@ -9,7 +9,7 @@ import {
 
 export function RightSideBar() {
   return (
-    <div className="mt-8 ml-5 mr-6 grid gap-6">
+    <div className="ml-5 mr-6 grid gap-6">
       <div className="align-items">
         <div className="circle-icons border-red-500">
           <Stethoscope color="white" size={28} />
