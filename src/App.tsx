@@ -4,7 +4,7 @@ import { RightSideBar } from "./components/RightSideBar.tsx";
 
 function App() {
   return (
-    <div className="grid grid-cols-[0.5fr_6fr_0.5fr] items-center  text-center h-screen">
+    <div className="grid grid-cols-[0.5fr_6fr_0.5fr] items-start text-center h-full">
       <LeftSideBar />
 
       <MiddleSide />

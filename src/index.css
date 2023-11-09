@@ -16,8 +16,8 @@
   .circle-icons {
     @apply grid;
     @apply rounded-full;
-    @apply h-20;
-    @apply w-20;
+    @apply h-16;
+    @apply w-16;
     @apply border-2;
     @apply items-center;
     @apply justify-center;
