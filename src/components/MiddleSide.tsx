@@ -9,8 +9,8 @@ export function MiddleSide() {
       <ItemKnowledge />
 
       <div
-        className="grid grid-cols-[2fr_2fr_2fr] mt-28
-          items-center justify-center text-center h-2/3 ml-40 gap-12"
+        className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1
+          mt-28 justify-items-center content-center text-center md:h-2/3 gap-12"
       >
         <ProjectPreviewItem />
         <ProjectPreviewItem />
